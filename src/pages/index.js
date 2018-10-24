@@ -1,26 +1,27 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import styled from 'react-emotion'
 
 import Layout from '../components/layout'
-import Image from '../components/image'
-
-const Header = styled.h1`
-  color: hotpink;
-`
+import Section1 from '../components/Section1'
+import Section2 from '../components/Section2'
+import Section3 from '../components/Section3'
+import Section4 from '../components/Section4'
+import Section5 from '../components/Section5'
+import Section6 from '../components/Section6'
+import Section7 from '../components/Section7'
+import Section8 from '../components/Section8'
+import Section9 from '../components/Section9'
 
 const IndexPage = () => (
   <Layout>
-    <Header>
-      Hello World
-    </Header>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Section1 />
+    <Section2 />
+    <Section3 />
+    <Section4 />
+    <Section5 />
+    <Section6 />
+    <Section7 />
+    <Section8 />
+    <Section9 />
   </Layout>
 )
 
