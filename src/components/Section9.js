@@ -20,20 +20,51 @@ const Title = styled.h2`
 `
 const Label = styled.p`
   color: var(--color_blue_light);
+  font-size: 32px;
 `
 
 const CardWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 40px -16px;
+  padding-left: 100px;
+  padding-right: 100px;
 `
 const Card = styled.div`
   min-height: 500px;
-  width: 500px;
+  min-width: 350px;
   background: #fff;
   border-radius: 8px;
   margin: 0 16px;
   color: var(--color_blur_dark);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+`
+
+const CardHead = styled.h3`
+  font-size: 24px;
+  color: #098bd5;
+  text-shadow: 0 4px 4px rgba(15, 29, 79, 0.25);
+`
+
+const CardTitle = styled.h1`
+  font-size: 48px;
+  color: #098bd5;
+  text-shadow: 0 4px 4px rgba(15, 29, 79, 0.25); 
+  margin: 0;
+  max-width: 300px;
+  word-wrap: break-word;
+  text-align: left;
+`
+
+const CardSubtitle = styled.h3`
+  font-size: 24px;
+  color: #484848;
+  max-width: 300px;
+  word-wrap: break-word;
+  text-align: left;
 `
 
 function Section9() {
@@ -48,13 +79,18 @@ function Section9() {
         </Label>
         <CardWrapper>
           <Card>
-            Day 1
+            <CardHead> Day 1 </CardHead>
+            <CardTitle> INSPIRE </CardTitle>
+            <CardSubtitle> Conference only </CardSubtitle>
           </Card>
           <Card>
-            Day 2
+            <CardHead> Day 2 </CardHead>
+            <CardTitle> HANDS-ON </CardTitle>
+            <CardSubtitle> Workshop Only (limited seat) </CardSubtitle>
           </Card>
           <Card>
-            Day 3
+            <CardTitle> FULL EXPERIENCE </CardTitle>
+            <CardSubtitle> Both Conference Day 1 & Workshop Day 2 </CardSubtitle>
           </Card>
         </CardWrapper>
       </Wrapper>
