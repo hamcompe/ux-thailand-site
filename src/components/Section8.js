@@ -28,13 +28,17 @@ const Name = styled.p`
   color: var(--color_blue);
   text-transform: uppercase;
 `
-const Description = styled.p``
+const Description = styled.p`
+  width: 100%;
+`
+
 const SpeakerContentBox = styled.div`
   text-align: center;
+  width: 335px;
 `
 const SpeakerImage = styled.div`
-  width: 100%;
-  height: 300px;
+  width: 335px;
+  height: 335px;
   background-image: linear-gradient(to top right, var(--color_blue_light), var(--color_blue));
 `
 const Layout = styled.div`

@@ -57,6 +57,7 @@ const CardTitle = styled.h1`
   max-width: 300px;
   word-wrap: break-word;
   text-align: left;
+  line-height: 0.94;
 `
 
 const CardSubtitle = styled.h3`
@@ -65,6 +66,25 @@ const CardSubtitle = styled.h3`
   max-width: 300px;
   word-wrap: break-word;
   text-align: left;
+`
+
+const CardPriceWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+`
+const CardPriceDiscount = styled.p`
+  text-decoration: line-through;
+  color: #ea0e50;
+  font-size: 32px;
+`
+
+const CardPrice = styled.p`
+  font-size: 64px;
+  color: #1c3180;
+  line-height: 60px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 `
 
 function Section9() {
@@ -82,15 +102,27 @@ function Section9() {
             <CardHead> Day 1 </CardHead>
             <CardTitle> INSPIRE </CardTitle>
             <CardSubtitle> Conference only </CardSubtitle>
+            <CardPriceWrapper>
+              <CardPriceDiscount> 4950 </CardPriceDiscount>
+              <CardPrice> 2450 THB </CardPrice>
+            </CardPriceWrapper>
           </Card>
           <Card>
             <CardHead> Day 2 </CardHead>
             <CardTitle> HANDS-ON </CardTitle>
             <CardSubtitle> Workshop Only (limited seat) </CardSubtitle>
+            <CardPriceWrapper>
+              <CardPriceDiscount> 11950 </CardPriceDiscount>
+              <CardPrice> 8950 THB </CardPrice>
+            </CardPriceWrapper>
           </Card>
           <Card>
             <CardTitle> FULL EXPERIENCE </CardTitle>
             <CardSubtitle> Both Conference Day 1 & Workshop Day 2 </CardSubtitle>
+            <CardPriceWrapper>
+              <CardPriceDiscount> 14950 </CardPriceDiscount>
+              <CardPrice> 9950 THB </CardPrice>
+            </CardPriceWrapper>
           </Card>
         </CardWrapper>
       </Wrapper>
