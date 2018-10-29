@@ -41,6 +41,54 @@ const Body = styled.span`
   font-style: normal;
   margin: 0 16px;
 `
+const gridGap = '16px'
+const SponsorWrapper = styled.div`
+  display: grid;
+  grid-gap: ${gridGap};
+  margin: 48px 0;
+`
+const SponsorGoldRow = styled.div`
+  display: grid;
+  grid-gap: ${gridGap};
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+
+  max-width: 860px;
+  width: 100%;
+`
+const SponsorSilverRow = styled.div`
+  display: grid;
+  grid-gap: ${gridGap};
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+
+  max-width: 1080px;
+  width: 100%;
+`
+const SponsorBronzeRow = styled.div`
+  display: grid;
+  grid-gap: ${gridGap};
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0 auto;
+
+  max-width: 1080px;
+  width: 100%;
+`
+const SponsorTemplateBox = styled.div`
+  width: 100%;
+  height: 100%;
+  min-height: 120px;
+  border: 1px solid #fff;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+// Temporary
+function SponsorTemplate() {
+  return <SponsorTemplateBox>Spopnsor</SponsorTemplateBox>
+}
+const renderByNum = num => Array.from({ length: num })
 
 function Section5() {
   return (
@@ -52,6 +100,23 @@ function Section5() {
           </Title>
           <SubTitle>Our partners in achieving our vision</SubTitle>
         </HeaderWrapper>
+        <SponsorWrapper>
+          <SponsorGoldRow>
+            {renderByNum(2).map(() => (
+              <SponsorTemplate />
+            ))}
+          </SponsorGoldRow>
+          <SponsorSilverRow>
+            {renderByNum(4).map(() => (
+              <SponsorTemplate />
+            ))}
+          </SponsorSilverRow>
+          <SponsorBronzeRow>
+            {renderByNum(5).map(() => (
+              <SponsorTemplate />
+            ))}
+          </SponsorBronzeRow>
+        </SponsorWrapper>
         <FooterWrapper>
           <Body>How to be apart of this UXTH Conference 2019,</Body>
           <Button>Contact us</Button>

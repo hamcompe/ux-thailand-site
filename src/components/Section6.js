@@ -18,13 +18,19 @@ const VerticalLine = styled.div`
   border-radius: 50px;
   box-shadow: 0 2px 4px 0 rgba(var(--color_blue_light_shadow));
 `
-const Title = styled.p`
+const Title = styled.h3`
+  font-style: italic;
   font-size: 36px;
   color: var(--color_blue);
+  font-weight: 200;
+
+  margin-bottom: 16px;
 `
-const Description = styled.p`
+const Description = styled.h4`
+  font-style: italic;
   font-size: 20px;
-  color: var(--color_grey_light);
+  font-weight: 300;
+  color: var(--color_grey_super_light);
 `
 const TextWrapper = styled.div`
   padding: 24px 0;

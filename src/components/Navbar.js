@@ -20,6 +20,7 @@ const Nav = styled.nav`
     && `
     background: rgba(255,255,255,0.95);
     color: var(--color_black);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   `};
 `
 const LogoWrapper = styled.div`
