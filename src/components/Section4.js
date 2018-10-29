@@ -1,18 +1,25 @@
 import React from 'react'
 import styled from 'react-emotion'
+import mq from '../../utils/media-query'
 
 const Section = styled.section`
   padding: 80px 0;
   background: var(--color_black);
   color: #fff;
 `
-const Wrapper = styled.div`
+const Container = styled.div`
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 var(--padding_size);
 `
 const Layout = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 24px;
+
+  ${mq.s} {
+    grid-template-columns: 1fr;
+  }
 `
 const Title = styled.p`
   font-size: 36px;
@@ -23,6 +30,11 @@ const Title = styled.p`
   max-width: 400px;
   text-indent: -0.4em;
   margin-bottom: 96px;
+
+  ${mq.s} {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
 `
 const SubTitle = styled.p`
   font-size: 24px;
@@ -30,6 +42,10 @@ const SubTitle = styled.p`
   font-weight: 200;
   color: var(--color_blue);
   margin-bottom: 8px;
+
+  ${mq.s} {
+    font-size: 20px;
+  }
 `
 const Body = styled.p`
   font-size: 14px;
@@ -43,7 +59,7 @@ const Body = styled.p`
 function Section4() {
   return (
     <Section>
-      <Wrapper>
+      <Container>
         <Layout>
           <div>some image here</div>
           <div>
@@ -66,7 +82,7 @@ function Section4() {
             </Body>
           </div>
         </Layout>
-      </Wrapper>
+      </Container>
     </Section>
   )
 }

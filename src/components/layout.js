@@ -26,6 +26,7 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'sample, something' },
           ]}
         >
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <html lang="en" />
         </Helmet>
         <Navbar />

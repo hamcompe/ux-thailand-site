@@ -1,7 +1,18 @@
 import React from 'react'
 import styled from 'react-emotion'
 import Button from './Button'
+import mq from '../../utils/media-query'
 
+const Section = styled.section`
+  background: var(--color_blur_dark);
+
+  padding-top: 200px;
+  padding-bottom: 100px;
+  ${mq.s} {
+    padding-top: 160px;
+    padding-bottom: 40px;
+  }
+`
 const HeroText = styled.h1`
   font-weight: 200;
   font-style: italic;
@@ -21,12 +32,6 @@ const BodyHightlight = styled.p`
   font-size: 20px;
   color: #fff;
   font-weight: 700;
-`
-const Section = styled.section`
-  background: var(--color_blur_dark);
-
-  padding-top: 200px;
-  padding-bottom: 100px;
 `
 const HeroSectionTextWrapper = styled.div`
   color: var(--color_almost_white);

@@ -1,19 +1,34 @@
 import React from 'react'
 import styled from 'react-emotion'
 import Button from './Button'
+import mq from '../../utils/media-query'
 
 const textSpacing = '40px'
 
+const Section = styled.section`
+  padding: 120px 0;
+  text-align: center;
+
+  ${mq.s} {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+`
 const Quote = styled.blockquote`
   font-size: 36px;
   font-weight: 200;
   font-style: italic;
   text-shadow: 0 4px 4px rgba(15, 29, 79, 0.25);
   color: var(--color_blur_dark);
-  text-align: center;
   line-height: 1.2;
   margin: 0;
   margin-bottom: ${textSpacing};
+
+  ${mq.s} {
+    margin-bottom: 8px;
+    font-size: 32px;
+  }
 `
 const QuoteName = styled.span`
   font-size: 14px;
@@ -27,7 +42,6 @@ const QuoteWrapper = styled.div`
 const Container = styled.div`
   margin: 0 auto;
   max-width: 926px;
-  text-align: center;
   padding: 0 var(--padding_size);
 `
 const BodyText = styled.p`
@@ -35,12 +49,13 @@ const BodyText = styled.p`
   font-weight: 200;
   font-style: italic;
   color: var(--color_black);
+
+  ${mq.s} {
+    font-size: 20px;
+  }
 `
 const TextWrapper = styled.div`
   margin-bottom: ${textSpacing};
-`
-const Section = styled.section`
-  padding: 120px 0;
 `
 
 function Section2() {
