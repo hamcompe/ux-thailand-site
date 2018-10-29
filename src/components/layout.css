@@ -6,9 +6,21 @@
 }
 @font-face {
   font-family: 'NunitoSans';
+  src: url('/fonts/NunitoSans-ExtraLightItalic.ttf');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'NunitoSans';
   src: url('/fonts/NunitoSans-Light.ttf');
   font-weight: 300;
   font-style: normal;
+}
+@font-face {
+  font-family: 'NunitoSans';
+  src: url('/fonts/NunitoSans-LightItalic.ttf');
+  font-weight: 300;
+  font-style: italic;
 }
 @font-face {
   font-family: 'NunitoSans';
@@ -18,9 +30,21 @@
 }
 @font-face {
   font-family: 'NunitoSans';
+  src: url('/fonts/NunitoSans-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'NunitoSans';
   src: url('/fonts/NunitoSans-SemiBold.ttf');
   font-weight: 500;
   font-style: normal;
+}
+@font-face {
+  font-family: 'NunitoSans';
+  src: url('/fonts/NunitoSans-SemiBoldItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
 }
 @font-face {
   font-family: 'NunitoSans';
@@ -30,15 +54,33 @@
 }
 @font-face {
   font-family: 'NunitoSans';
+  src: url('/fonts/NunitoSans-BoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'NunitoSans';
   src: url('/fonts/NunitoSans-ExtraBold.ttf');
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'NunitoSans';
+  src: url('/fonts/NunitoSans-ExtraBoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'NunitoSans';
   src: url('/fonts/NunitoSans-Black.ttf');
   font-weight: 800;
   font-style: normal;
+}
+@font-face {
+  font-family: 'NunitoSans';
+  src: url('/fonts/NunitoSans-BlackItalic.ttf');
+  font-weight: 800;
+  font-style: italic;
 }
 :root {
   --color_blue: #01a7f2;
