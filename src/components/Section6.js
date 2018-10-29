@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'react-emotion'
 
 const Section = styled.section`
-  padding: 79px 0;
+  padding: 80px 0;
   background-image: linear-gradient(#000, var(--color_blur_dark));
   color: #fff;
   display: flex;
@@ -12,7 +12,7 @@ const Section = styled.section`
 }
 `
 const VerticalLine = styled.div`
-  height: 67px;
+  height: 100px;
   background: var(--color_blue_light);
   width: 1px;
   border-radius: 50px;

@@ -10,14 +10,16 @@ const Nav = styled.nav`
   right: 0;
   min-height: 63px;
   padding: 0 40px;
-  box-shadow: 0 1px rgba(99, 114, 130, 0.16);
   align-items: center;
   transition: all 0.3s ease;
-  color: #fff;
+
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color_almost_white);
   ${props => props.white
     && `
     background: rgba(255,255,255,0.95);
-    color: #000;
+    color: var(--color_black);
   `};
 `
 const LogoWrapper = styled.div`
@@ -36,7 +38,7 @@ const Li = styled.li`
 
 class Navbar extends React.Component {
   state = {
-    offset: window.pageYOffset,
+    offset: 0,
   }
 
   handleScroll = () => {
