@@ -2,20 +2,24 @@ import React from 'react'
 import styled from 'react-emotion'
 import Button from './Button'
 
-const HeroText = styled.h2`
-  color: #fff;
-  font-size: 42px;
-  margin-bottom: 36px;
-  font-weight: 400;
+const HeroText = styled.h1`
+  font-weight: 200;
+  font-style: italic;
+  font-size: 36px;
+  text-shadow: 0 4px 4px rgba(15, 29, 79, 0.25);
+  line-height: 1.2;
+  margin-bottom: 80px;
 `
 const Body = styled.p`
-  color: #fff;
+  font-style: italic;
   font-size: 20px;
-  margin-bottom: 36px;
+  font-weight: 300;
+  margin-bottom: 64px;
 `
 const BodyHightlight = styled.p`
-  color: #fff;
+  font-style: italic;
   font-size: 20px;
+  color: #fff;
   font-weight: 700;
 `
 const Section = styled.section`
@@ -25,6 +29,7 @@ const Section = styled.section`
   padding-bottom: 100px;
 `
 const HeroSectionTextWrapper = styled.div`
+  color: var(--color_almost_white);
   max-width: 720px;
 `
 const Container = styled.div`
