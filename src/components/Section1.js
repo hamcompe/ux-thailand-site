@@ -19,7 +19,7 @@ const BodyHightlight = styled.p`
   font-weight: 700;
 `
 const Section = styled.section`
-  background: #012A6C;
+  background: var(--color_blur_dark);
 
   padding-top: 200px;
   padding-bottom: 100px;
@@ -32,23 +32,16 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 0 16px;
 `
+
 function HeroSection() {
   return (
     <Section>
       <Container>
         <HeroSectionTextWrapper>
-          <HeroText>
-            A two-day conference for people who build world-class products.
-          </HeroText>
-          <BodyHightlight>
-            23-24 February, 2019
-          </BodyHightlight>
-          <Body>
-            Central Bangkok, Thailand
-          </Body>
-          <Button>
-            buy ticket
-          </Button>
+          <HeroText>A two-day conference for people who build world-class products.</HeroText>
+          <BodyHightlight>23-24 February, 2019</BodyHightlight>
+          <Body>Central Bangkok, Thailand</Body>
+          <Button>buy ticket</Button>
         </HeroSectionTextWrapper>
       </Container>
     </Section>
