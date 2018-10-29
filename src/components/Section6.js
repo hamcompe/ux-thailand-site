@@ -2,16 +2,46 @@ import React from 'react'
 import styled from 'react-emotion'
 
 const Section = styled.section`
-  min-height: 400px;
+  padding: 79px 0;
   background-image: linear-gradient(#000, var(--color_blur_dark));
   color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+`
+const VerticalLine = styled.div`
+  height: 67px;
+  background: var(--color_blue_light);
+  width: 1px;
+  border-radius: 50px;
+  box-shadow: 0 2px 4px 0 rgba(var(--color_blue_light_shadow));
+`
+const Title = styled.p`
+  font-size: 36px;
+  color: var(--color_blue);
+`
+const Description = styled.p`
+  font-size: 20px;
+  color: var(--color_grey_light);
+`
+const TextWrapper = styled.div`
+  padding: 24px 0;
+  text-align: center;
 `
 
 function Section6() {
   return (
     <Section>
-      Content here
+      <VerticalLine />
+      <TextWrapper>
+        <Title>Two days to inspire and upskill</Title>
+        <Description>
+          The UX Thailand Conference 2019, held in Bangkok for an international audience
+        </Description>
+      </TextWrapper>
+      <VerticalLine />
     </Section>
   )
 }
