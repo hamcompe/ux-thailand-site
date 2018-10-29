@@ -7,21 +7,28 @@ const Section = styled.section`
   color: #fff;
 `
 const Label = styled.span`
-  font-weight: 700;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 24px;
   color: var(--color_blue);
 `
 const Title = styled.p`
-  font-size: 36px;
+  font-size: 48px;
+  font-style: italic;
+  font-weight: 200;
   color: var(--color_blue);
   margin-bottom: 16px;
 `
 const SubTitle = styled.p`
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 24px;
   margin-bottom: 24px;
 `
 const Body = styled.p`
-
+  font-size: 14px;
+  font-weight: 300;
+  color: #e8e8e8;
 `
 const Wrapper = styled.div`
   max-width: 800px;

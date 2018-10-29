@@ -15,21 +15,31 @@ const TitleWrapper = styled.div`
   margin-bottom: 40px;
 `
 const Title = styled.p`
-  font-size: 46px;
+  font-size: 48px;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 45px;
   color: var(--color_blue);
+  margin-bottom: 10px;
 `
 const SubTitle = styled.p`
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 300;
+  font-style: italic;
+  color: #e8e8e8;
 `
 const Name = styled.p`
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 600;
+  font-style: italic;
   color: var(--color_blue);
   text-transform: uppercase;
 `
 const Description = styled.p`
+  font-size: 14px;
+  font-weight: 300;
   width: 100%;
+  color: #e8e8e8;
 `
 
 const SpeakerContentBox = styled.div`
