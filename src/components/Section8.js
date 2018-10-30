@@ -52,9 +52,9 @@ const SpeakerImage = styled.div`
   background-image: linear-gradient(to top right, var(--color_blue_light), var(--color_blue));
 `
 const Layout = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 
 function Section8() {

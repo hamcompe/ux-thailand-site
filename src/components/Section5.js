@@ -5,7 +5,7 @@ import Button from './Button'
 const Section = styled.section`
   padding: 80px 0;
   min-height: 500px;
-  background: #111;
+  background: black;
   color: var(--color_grey_super_light);
 `
 const Container = styled.div`
