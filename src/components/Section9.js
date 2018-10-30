@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `
 const Title = styled.h2`
   font-size: 48px;
-  font-weight: 200;
+  font-weight: 100;
   font-style: italic;
   line-height: 45px;
   strong {
@@ -22,9 +22,10 @@ const Title = styled.h2`
 `
 const Label = styled.p`
   color: var(--color_blue_light);
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   font-style: italic;
+  margin-top: 60px;
 `
 
 const CardWrapper = styled.div`

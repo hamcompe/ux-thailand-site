@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
+import SpeakerCard from './SpeakerCard'
 
 const Section = styled.section`
   background: var(--color_blur_dark);
@@ -15,47 +16,40 @@ const TitleWrapper = styled.div`
   margin-bottom: 40px;
 `
 const Title = styled.p`
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 200;
   font-style: italic;
   line-height: 45px;
   color: var(--color_blue);
   margin-bottom: 10px;
 `
-const SubTitle = styled.p`
-  font-size: 24px;
-  font-weight: 300;
-  font-style: italic;
-  color: #e8e8e8;
-`
-const Name = styled.p`
-  font-size: 32px;
-  font-weight: 600;
-  font-style: italic;
-  color: var(--color_blue);
-  text-transform: uppercase;
-`
-const Description = styled.p`
-  font-size: 14px;
-  font-weight: 300;
-  width: 100%;
-  color: #e8e8e8;
-`
 
-const SpeakerContentBox = styled.div`
-  text-align: center;
-  width: 335px;
-`
-const SpeakerImage = styled.div`
-  width: 335px;
-  height: 335px;
-  background-image: linear-gradient(to top right, var(--color_blue_light), var(--color_blue));
-`
 const Layout = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
 `
+
+const speaker = {
+  jared: {
+    time: '10:00 - 11:00',
+    title: 'The Evolution of a New UX Design Resolution',
+    name: 'JARED SPOOL',
+    detail: 'is a Maker of Awesomeness at Center Centre/UIE and one of the leading experts in user experience. Get to know more',
+  },
+  dana: {
+    time: '11:00 - 12:00',
+    title: 'Democracy Is A Design Problem',
+    name: 'DANA CHISNELL',
+    detail: 'is the Co-Founder of the Center for Civic Design and founding team member of President Obama’s US Digital Service. Get to know more',
+  },
+  john: {
+    time: '13:00 - 14:00',
+    title: 'Topic is mockup now',
+    name: 'JOHN CUTLER',
+    detail: 'is Product Development Coach who is keenly focused on user experience and evidence-driven product development. Get to know more',
+  },
+}
 
 function Section8({id}) {
   return (
@@ -63,67 +57,13 @@ function Section8({id}) {
       <Wrapper>
         <TitleWrapper>
           <Title>
-            OUR SPEAKERS
+            AGENDA
           </Title>
-          <SubTitle>
-            Joined thought-leaders from across the globe
-          </SubTitle>
         </TitleWrapper>
         <Layout>
-          <SpeakerContentBox>
-            <SpeakerImage />
-            <Name>
-              Jared Spool
-            </Name>
-            <Description>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet repudiandae reprehenderit assumenda consequuntur aliquid, delectus, maxime sequi tempora, possimus ex natus distinctio velit consequatur. Ipsam reiciendis suscipit non id.
-            </Description>
-          </SpeakerContentBox>
-          <SpeakerContentBox>
-            <SpeakerImage />
-            <Name>
-              Jared Spool
-            </Name>
-            <Description>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet repudiandae reprehenderit assumenda consequuntur aliquid, delectus, maxime sequi tempora, possimus ex natus distinctio velit consequatur. Ipsam reiciendis suscipit non id.
-            </Description>
-          </SpeakerContentBox>
-          <SpeakerContentBox>
-            <SpeakerImage />
-            <Name>
-              Jared Spool
-            </Name>
-            <Description>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet repudiandae reprehenderit assumenda consequuntur aliquid, delectus, maxime sequi tempora, possimus ex natus distinctio velit consequatur. Ipsam reiciendis suscipit non id.
-            </Description>
-          </SpeakerContentBox>
-          <SpeakerContentBox>
-            <SpeakerImage />
-            <Name>
-              Jared Spool
-            </Name>
-            <Description>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet repudiandae reprehenderit assumenda consequuntur aliquid, delectus, maxime sequi tempora, possimus ex natus distinctio velit consequatur. Ipsam reiciendis suscipit non id.
-            </Description>
-          </SpeakerContentBox>
-          <SpeakerContentBox>
-            <SpeakerImage />
-            <Name>
-              Jared Spool
-            </Name>
-            <Description>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet repudiandae reprehenderit assumenda consequuntur aliquid, delectus, maxime sequi tempora, possimus ex natus distinctio velit consequatur. Ipsam reiciendis suscipit non id.
-            </Description>
-          </SpeakerContentBox>
-          <SpeakerContentBox>
-            <SpeakerImage />
-            <Name>
-              Jared Spool
-            </Name>
-            <Description>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet eveniet repudiandae reprehenderit assumenda consequuntur aliquid, delectus, maxime sequi tempora, possimus ex natus distinctio velit consequatur. Ipsam reiciendis suscipit non id.
-            </Description>
-          </SpeakerContentBox>
+          <SpeakerCard speaker={speaker.jared} />
+          <SpeakerCard speaker={speaker.dana} />
+          <SpeakerCard speaker={speaker.john} />
         </Layout>
       </Wrapper>
     </Section>
