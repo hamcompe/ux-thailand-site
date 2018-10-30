@@ -6,7 +6,8 @@ import mq, { breakpoints } from '../../utils/media-query'
 const Section = styled.section`
   padding: 80px 0;
   min-height: 500px;
-  background: #000;
+  background: #000 url('/images/sponsor-bg.png') no-repeat center center scroll;
+  background-size: cover;
   color: var(--color_grey_super_light);
 `
 const Container = styled.div`

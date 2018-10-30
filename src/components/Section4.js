@@ -3,7 +3,8 @@ import styled from 'react-emotion'
 import mq from '../../utils/media-query'
 
 const Section = styled.section`
-  background: #000;
+  background: #000 url('/images/vision-bg.png') no-repeat center center scroll;
+  background-size: cover;
   color: #fff;
 `
 const Container = styled.div`
