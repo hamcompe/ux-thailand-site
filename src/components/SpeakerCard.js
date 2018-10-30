@@ -16,8 +16,8 @@ const Time = styled.p`
   margin-top: 20px;
 `
 
-const SpeakerImage = styled.div`
-  width: 217px;
+const SpeakerImage = styled.img`
+  width: 208px;
   height: 208px;
   margin-right: 40px;
   margin-left: 40px;
@@ -39,6 +39,7 @@ const Title = styled.h1`
   line-height: 1.2;
   letter-spacing: normal;
   color: #098bd5;
+  text-shadow: 0 4px 4px rgba(15, 29, 79, 0.25);
 `
 const Name = styled.h2`
   font-size: 20px;
@@ -46,19 +47,21 @@ const Name = styled.h2`
   font-style: italic;
   color: #098bd5;
   line-height: 2.2;
+  text-shadow: 0 4px 4px rgba(15, 29, 79, 0.25);
 `
 
 const Detail = styled.p`
   font-size: 14px;
   font-weight: 300;
   color: #e8e8e8;
+  text-shadow: 0 4px 4px rgba(15, 29, 79, 0.25);
 `
 
 function SpeakerCard({ speaker }) {
   return (
     <SpeakerContentBox>
       <Time>{speaker.time}</Time>
-      <SpeakerImage />
+      <SpeakerImage src={speaker.image} alt="" />
       <SpeakerDetailWrapper>
         <Title>{speaker.title}</Title>
         <Name>{speaker.name}</Name>
