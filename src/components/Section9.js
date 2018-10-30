@@ -61,7 +61,7 @@ const CardTitle = styled.h1`
   font-weight: 200;
   font-style: italic;
   color: #098bd5;
-  text-shadow: 0 4px 4px rgba(15, 29, 79, 0.25); 
+  text-shadow: 0 4px 4px rgba(15, 29, 79, 0.25);
   margin: 0;
   max-width: 300px;
   word-wrap: break-word;
@@ -110,9 +110,9 @@ const CardPrice = styled.p`
   }
 `
 
-function Section9() {
+function Section9({id}) {
   return (
-    <Section>
+    <Section id={id}>
       <Wrapper>
         <Title>
           Join us at <strong>The UX Thailand Conference</strong>

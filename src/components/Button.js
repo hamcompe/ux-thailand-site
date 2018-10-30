@@ -33,7 +33,7 @@ const OutlineStyle = css`
   }
 `
 
-const ButtonStyle = ({ outline }) => css`
+const ButtonStyle = ({ outline, stretchOn = '0px' }) => css`
   font-size: 16px;
   min-height: 44px;
   cursor: pointer;
@@ -47,6 +47,9 @@ const ButtonStyle = ({ outline }) => css`
   }
   &:active {
     transform: scale(0.96);
+  }
+  @media (max-width: ${stretchOn}) {
+    width: 100%;
   }
 
   ${outline ? OutlineStyle : PrimaryStyle};

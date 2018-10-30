@@ -5,11 +5,16 @@ const Section = styled.section`
   padding: 80px 0;
   background-image: linear-gradient(#000, var(--color_blur_dark));
   color: #fff;
+`
+const Container = styled.div`
+  max-width: var(--layout_width_size_large);
+  margin: 0 auto;
+  padding: 0 var(--padding_size);
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
 `
 const VerticalLine = styled.div`
   height: 100px;
@@ -37,17 +42,19 @@ const TextWrapper = styled.div`
   text-align: center;
 `
 
-function Section6() {
+function Section6({ id }) {
   return (
-    <Section>
-      <VerticalLine />
-      <TextWrapper>
-        <Title>Two days to inspire and upskill</Title>
-        <Description>
-          The UX Thailand Conference 2019, held in Bangkok for an international audience
-        </Description>
-      </TextWrapper>
-      <VerticalLine />
+    <Section id={id}>
+      <Container>
+        <VerticalLine />
+        <TextWrapper>
+          <Title>Two days to inspire and upskill</Title>
+          <Description>
+            The UX Thailand Conference 2019, held in Bangkok for an international audience
+          </Description>
+        </TextWrapper>
+        <VerticalLine />
+      </Container>
     </Section>
   )
 }

@@ -5,3 +5,4 @@ const mq = Object.entries(breakpoints).reduce(
 )
 
 export default mq
+export { breakpoints }

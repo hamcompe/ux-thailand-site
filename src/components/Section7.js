@@ -43,9 +43,9 @@ const Layout = styled.div`
 `
 const ContentBox = styled.div``
 
-function Section7() {
+function Section7({id}) {
   return (
-    <Section>
+    <Section id={id}>
       <Wrapper>
         <Layout>
           <ContentBox>

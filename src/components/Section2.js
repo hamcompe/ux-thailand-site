@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'react-emotion'
 import Button from './Button'
-import mq from '../../utils/media-query'
+import mq, { breakpoints } from '../../utils/media-query'
 
 const textSpacing = '40px'
 
@@ -58,9 +58,9 @@ const TextWrapper = styled.div`
   margin-bottom: ${textSpacing};
 `
 
-function Section2() {
+function Section2({ id }) {
   return (
-    <Section>
+    <Section id={id}>
       <Container>
         <QuoteWrapper>
           <Quote>
@@ -76,7 +76,9 @@ function Section2() {
             industry. Be aware! there’re full of intense inspiring and upskill.
           </BodyText>
         </TextWrapper>
-        <Button outline>See last year’s highlights</Button>
+        <Button outline stretchOn={`${breakpoints.s}px`}>
+          See last year’s highlights
+        </Button>
       </Container>
     </Section>
   )

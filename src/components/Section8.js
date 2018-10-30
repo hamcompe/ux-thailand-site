@@ -57,9 +57,9 @@ const Layout = styled.div`
   align-items: center;
 `
 
-function Section8() {
+function Section8({id}) {
   return (
-    <Section>
+    <Section id={id}>
       <Wrapper>
         <TitleWrapper>
           <Title>

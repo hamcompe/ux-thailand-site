@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'react-emotion'
 import Button from './Button'
-import mq from '../../utils/media-query'
+import mq, { breakpoints } from '../../utils/media-query'
 
 const Section = styled.section`
-  background: var(--color_blur_dark);
+  background: url('/images/hero-lg.png') no-repeat center center fixed;
+  background-size: cover;
 
   padding-top: 200px;
   padding-bottom: 100px;
@@ -38,24 +39,24 @@ const HeroSectionTextWrapper = styled.div`
   max-width: 720px;
 `
 const Container = styled.div`
-  max-width: 1440px;
+  max-width: var(--layout_width_size_large);
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 var(--padding_size);
 `
 
-function HeroSection() {
+function Section1({ id }) {
   return (
-    <Section>
+    <Section id={id}>
       <Container>
         <HeroSectionTextWrapper>
           <HeroText>A two-day conference for people who build world-class products.</HeroText>
           <BodyHightlight>23-24 February, 2019</BodyHightlight>
           <Body>Central Bangkok, Thailand</Body>
-          <Button>buy ticket</Button>
+          <Button stretchOn={`${breakpoints.s}px`}>buy ticket</Button>
         </HeroSectionTextWrapper>
       </Container>
     </Section>
   )
 }
 
-export default HeroSection
+export default Section1
