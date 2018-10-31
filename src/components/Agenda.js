@@ -1,34 +1,7 @@
 import React from 'react'
 import styled from 'react-emotion'
-import SpeakerCard from './SpeakerCard'
+import SpeakerCard, { Time } from './SpeakerCard'
 
-const Section = styled.section`
-  background: var(--color_blur_dark);
-  color: #fff;
-  padding: 63px 0;
-`
-const Wrapper = styled.div`
-  max-width: 1440px;
-  margin: 0 auto;
-`
-const TitleWrapper = styled.div`
-  text-align: center;
-  margin-bottom: 40px;
-`
-const Title = styled.p`
-  font-size: 36px;
-  font-weight: 200;
-  font-style: italic;
-  line-height: 45px;
-  color: var(--color_blue);
-  margin-bottom: 10px;
-`
-
-const Layout = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
 
 const speaker = {
   jared: {
@@ -68,6 +41,59 @@ const speaker = {
   },
 }
 
+const Section = styled.section`
+  background: var(--color_blur_dark);
+  color: #fff;
+  padding: 63px 0;
+`
+const Wrapper = styled.div`
+  max-width: 1440px;
+  margin: 0 auto;
+`
+const TitleWrapper = styled.div`
+  text-align: center;
+  margin-bottom: 40px;
+`
+const Title = styled.p`
+  font-size: 36px;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 45px;
+  color: var(--color_blue);
+  margin-bottom: 10px;
+`
+
+const Layout = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
+
+const BreakBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px;
+`
+
+const Seperator = styled.div`
+  width: 690px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: rgba(248, 248, 248, 0.2);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(248, 248, 248, 0.2);
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 30px;
+  font-size: 24px;
+  font-weight: 200;
+  font-style: italic;
+  color: #098bd5;
+`
+
 function Section8({id}) {
   return (
     <Section id={id}>
@@ -80,6 +106,10 @@ function Section8({id}) {
         <Layout>
           <SpeakerCard speaker={speaker.jared} />
           <SpeakerCard speaker={speaker.dana} />
+          <BreakBox>
+            <Time>12:00 - 13:00</Time>
+            <Seperator>Lunch Time</Seperator>
+          </BreakBox>
           <SpeakerCard speaker={speaker.john} />
           <SpeakerCard speaker={speaker.melissa} />
           <SpeakerCard speaker={speaker.liam} />

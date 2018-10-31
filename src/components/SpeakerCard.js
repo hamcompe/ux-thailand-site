@@ -8,7 +8,7 @@ const SpeakerContentBox = styled.div`
   margin-bottom: 40px;
 `
 
-const Time = styled.p`
+export const Time = styled.p`
   font-weight: 400;
   font-style: italic;
   font-size: 24px;

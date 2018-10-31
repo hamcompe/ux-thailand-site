@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import mq from '../../utils/media-query'
 
 const Nav = styled.nav`
+  z-index: 9999;
   display: flex;
   position: fixed;
   top: 0;
