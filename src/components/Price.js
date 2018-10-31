@@ -68,6 +68,7 @@ const CardTitle = styled.h1`
   word-wrap: break-word;
   text-align: left;
   line-height: 45px;
+  margin-bottom: 36px;
 `
 
 const CardSubtitle = styled.h3`
@@ -78,6 +79,9 @@ const CardSubtitle = styled.h3`
   max-width: 300px;
   word-wrap: break-word;
   text-align: left;
+  blue {
+    color: var(--color_blue)
+  }
 `
 
 const CardPriceWrapper = styled.div`
@@ -163,7 +167,7 @@ function Price ({id}) {
           </Card>
           <Card>
             <CardTitle> FULL EXPERIENCE </CardTitle>
-            <CardSubtitle> Both Conference Day 1 & Workshop Day 2 </CardSubtitle>
+            <CardSubtitle> Both Conference <blue>Day 1</blue> & Workshop <blue>Day 2</blue> </CardSubtitle>
             <CardPriceWrapper>
               <CardPriceDiscount> 14,950 </CardPriceDiscount>
               <CardPrice> 9,950 <small>THB</small> </CardPrice>

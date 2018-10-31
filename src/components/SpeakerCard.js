@@ -55,6 +55,14 @@ const Detail = styled.p`
   font-weight: 300;
   color: #e8e8e8;
   text-shadow: 0 4px 4px rgba(15, 29, 79, 0.25);
+  know {
+    color: var(--color_blue);
+    text-decoration: underline;
+    cursor: pointer;
+    :hover {
+      color: var(--color_white)
+    }
+  }
 `
 
 function SpeakerCard({ speaker }) {
@@ -65,7 +73,7 @@ function SpeakerCard({ speaker }) {
       <SpeakerDetailWrapper>
         <Title>{speaker.title}</Title>
         <Name>{speaker.name}</Name>
-        <Detail>{speaker.detail}</Detail>
+        <Detail>{speaker.detail} <know>Get to know more</know></Detail>
       </SpeakerDetailWrapper>
     </SpeakerContentBox>
   )
