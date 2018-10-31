@@ -111,7 +111,26 @@ const CardPrice = styled.p`
   }
 `
 
-function Section9({id}) {
+const BuyTicket = styled.div`
+  :hover {
+    cursor: pointer;
+  }
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  color: #098bd5;
+  border-top-style: dashed;
+  border-top-width: 2px;
+  border-color: #c4c4c4;
+`
+
+function Price ({id}) {
   return (
     <Section id={id}>
       <Wrapper>
@@ -130,6 +149,7 @@ function Section9({id}) {
               <CardPriceDiscount> 4,950 </CardPriceDiscount>
               <CardPrice> 2,450 <small>THB</small> </CardPrice>
             </CardPriceWrapper>
+            <BuyTicket>Buy Ticket</BuyTicket>
           </Card>
           <Card>
             <CardHead> Day 2 </CardHead>
@@ -139,6 +159,7 @@ function Section9({id}) {
               <CardPriceDiscount> 11,950 </CardPriceDiscount>
               <CardPrice> 8,950 <small>THB</small> </CardPrice>
             </CardPriceWrapper>
+            <BuyTicket>Buy Ticket</BuyTicket>
           </Card>
           <Card>
             <CardTitle> FULL EXPERIENCE </CardTitle>
@@ -147,6 +168,7 @@ function Section9({id}) {
               <CardPriceDiscount> 14,950 </CardPriceDiscount>
               <CardPrice> 9,950 <small>THB</small> </CardPrice>
             </CardPriceWrapper>
+            <BuyTicket>Buy Ticket</BuyTicket>
           </Card>
         </CardWrapper>
       </Wrapper>
@@ -154,4 +176,4 @@ function Section9({id}) {
   )
 }
 
-export default Section9
+export default Price
