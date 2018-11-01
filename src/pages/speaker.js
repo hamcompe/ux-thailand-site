@@ -123,6 +123,27 @@ const NameImageWrapper = styled.div`
   margin-top: 40px;
 `
 
+const NameText = styled.div`
+  width: 335px;
+  font-size: 48px;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--color_blur_dark);
+  position: absolute;
+`
+
+const NameTextLeft = styled(NameText)`
+  bottom: 20px;
+  left: 20px;
+  text-align: left;
+`
+
+const NameTextRight = styled(NameText)`
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+`
+
 const NameImageLeft = styled.img`
   width: 640px;
   height: 365px;
@@ -133,6 +154,12 @@ const NameImageRight = styled.img`
   width: 640px;
   height: 365px;
   margin-left: 20px;
+`
+
+const ImageWrapper = styled.div`
+  width: 640px;
+  height: 365px;
+  position: relative;
 `
 
 const Speaker = () => (
@@ -167,8 +194,14 @@ const Speaker = () => (
         <ChangePageSection>
           <ChangePageTitle>Want to know more... ?</ChangePageTitle>
           <NameImageWrapper>
-            <NameImageLeft src="images/spk_LiamHutchinson@3x.png" />
-            <NameImageRight src="images/spk_DanaChisnell@3x.png" />
+            <ImageWrapper>
+              <NameImageLeft src="images/spk_LiamHutchinson@3x.png" />
+              <NameTextLeft> LIAM HUTCHINSON </NameTextLeft>
+            </ImageWrapper>
+            <ImageWrapper>
+              <NameImageRight src="images/spk_DanaChisnell@3x.png" />
+              <NameTextRight> DANA CHISNELL </NameTextRight>
+            </ImageWrapper>
           </NameImageWrapper>
         </ChangePageSection>
       </SpeakerSection>
