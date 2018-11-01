@@ -1,11 +1,17 @@
 import React from 'react'
 import styled from 'react-emotion'
+import mq from '../../utils/media-query'
 
 const SpeakerContentBox = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-bottom: 40px;
+  ${mq.s} {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 100px;
+  }
 `
 
 export const Time = styled.p`
@@ -22,6 +28,9 @@ const SpeakerImage = styled.img`
   margin-right: 40px;
   margin-left: 40px;
   background-image: linear-gradient(to top right, var(--color_blue_light), var(--color_blue));
+  ${mq.s} {
+    margin-left: 0px;
+  }
 `
 
 const SpeakerDetailWrapper = styled.div`
@@ -30,6 +39,9 @@ const SpeakerDetailWrapper = styled.div`
   align-items: flex-start;
   width: 430px;
   margin-top: 10px;
+  ${mq.s} {
+    width: 200px;
+  }
 `
 
 const Title = styled.h1`
