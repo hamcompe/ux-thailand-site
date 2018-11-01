@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
+import mq from '../../utils/media-query'
 
 const Section = styled.section`
   background-image: linear-gradient(var(--color_blur_dark), var(--color_blue));
@@ -34,6 +35,13 @@ const CardWrapper = styled.div`
   margin: 40px -16px;
   padding-left: 100px;
   padding-right: 100px;
+
+  ${mq.s} {
+    flex-direction: column;
+    align-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 `
 const Card = styled.div`
   min-height: 500px;
@@ -47,6 +55,10 @@ const Card = styled.div`
   align-items: flex-start;
   padding: 30px;
   position: relative;
+  ${mq.s} {
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
 `
 
 const CardHead = styled.h3`
@@ -134,7 +146,7 @@ const BuyTicket = styled.div`
   border-color: #c4c4c4;
 `
 
-function Price ({id}) {
+function Price({id}) {
   return (
     <Section id={id}>
       <Wrapper>
