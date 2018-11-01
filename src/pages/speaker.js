@@ -116,6 +116,25 @@ const ChangePageTitle = styled.h2`
   text-align: center;
 `
 
+const NameImageWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+`
+
+const NameImageLeft = styled.img`
+  width: 640px;
+  height: 365px;
+  margin-right: 20px;
+`
+
+const NameImageRight = styled.img`
+  width: 640px;
+  height: 365px;
+  margin-left: 20px;
+`
+
 const Speaker = () => (
   <Layout>
     <Page>
@@ -147,6 +166,10 @@ const Speaker = () => (
         </SpeakerWrapper>
         <ChangePageSection>
           <ChangePageTitle>Want to know more... ?</ChangePageTitle>
+          <NameImageWrapper>
+            <NameImageLeft src="images/spk_LiamHutchinson@3x.png" />
+            <NameImageRight src="images/spk_DanaChisnell@3x.png" />
+          </NameImageWrapper>
         </ChangePageSection>
       </SpeakerSection>
     </Page>
