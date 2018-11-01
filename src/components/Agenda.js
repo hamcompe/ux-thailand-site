@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'react-emotion'
-import SpeakerCard, { Time } from './SpeakerCard'
+import SpeakerCard, { LunchBreak } from './SpeakerCard'
 
 const speaker = {
   jared: {
@@ -51,7 +51,8 @@ const Section = styled.section`
   padding: 63px 0;
 `
 const Wrapper = styled.div`
-  max-width: 1440px;
+  max-width: 860px;
+  padding: 0 var(--padding_size);
   margin: 0 auto;
 `
 const TitleWrapper = styled.div`
@@ -68,34 +69,9 @@ const Title = styled.p`
 `
 
 const Layout = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-
-const BreakBox = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-bottom: 40px;
-`
-
-const Seperator = styled.div`
-  width: 690px;
-  border-top-width: 1px;
-  border-top-style: solid;
-  border-top-color: rgba(248, 248, 248, 0.2);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: rgba(248, 248, 248, 0.2);
-  text-align: left;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-left: 30px;
-  font-size: 24px;
-  font-weight: 200;
-  font-style: italic;
-  color: #098bd5;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 40px;
 `
 
 function Section8({ id }) {
@@ -108,10 +84,7 @@ function Section8({ id }) {
         <Layout>
           <SpeakerCard speaker={speaker.jared} />
           <SpeakerCard speaker={speaker.dana} />
-          <BreakBox>
-            <Time>12:00 - 13:00</Time>
-            <Seperator>Lunch Time</Seperator>
-          </BreakBox>
+          <LunchBreak />
           <SpeakerCard speaker={speaker.john} />
           <SpeakerCard speaker={speaker.melissa} />
           <SpeakerCard speaker={speaker.liam} />
