@@ -9,6 +9,10 @@ const FootWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  ${mq.s} {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const ImageLogo = styled.img`
