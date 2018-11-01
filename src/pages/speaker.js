@@ -4,7 +4,7 @@ import mq from '../../utils/media-query'
 
 import Layout from '../components/layout'
 
-const Section = styled.section`
+const Page = styled.div`
   background-image: linear-gradient(#000, var(--color_blur_dark));
 
   padding-top: 200px;
@@ -15,7 +15,7 @@ const Section = styled.section`
   }
 `
 
-const Container = styled.div`
+const SpeakerSection = styled.section`
   max-width: var(--layout_width_size_large);
   margin: 0 auto;
   padding: 0 var(--padding_size);
@@ -63,6 +63,7 @@ const DateTime = styled.p`
   font-weight: normal;
   font-style: italic;
   color: rgba(232, 232, 232, 0.6);
+  margin-top: 40px;
   margin-bottom: 10px;
 `
 
@@ -71,7 +72,7 @@ const Topic = styled.h1`
   font-weight: 200;
   font-style: italic;
   color: var(--color_blue);
-  line-height: 1;
+  line-height: 1.2;
   margin-bottom: 40px;
 `
 
@@ -80,16 +81,19 @@ const Content = styled.p`
   font-weight: 300;
   font-style: italic;
   color: var(--color_grey_super_light);
+  margin-bottom: 20px;
 `
 
 const BlueContent = styled.p`
   font-size: 16px;
   font-weight: 300; 
   color: var(--color_blue);
+  margin-bottom: 10px;
 `
 
 const ListWrapper = styled.ul`
   list-style: circle outside none;
+  padding-left: 20px;
 `
 
 const ListItem = styled.li`
@@ -97,12 +101,25 @@ const ListItem = styled.li`
   font-weight: normal;
   font-style: italic;
   color: var(--color_grey_super_light);
+  line-height: 2;
+`
+
+const ChangePageSection = styled.section`
+  padding-top: 100px;
+`
+
+const ChangePageTitle = styled.h2`
+  font-size: 36px;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--color_blue);
+  text-align: center;
 `
 
 const Speaker = () => (
   <Layout>
-    <Section>
-      <Container>
+    <Page>
+      <SpeakerSection>
         <SpeakerWrapper>
           <Image src="images/spk_JaredSpool@3x.png" />
           <DetailWrapper>
@@ -128,8 +145,11 @@ const Speaker = () => (
             </ListWrapper>
           </DetailWrapper>
         </SpeakerWrapper>
-      </Container>
-    </Section>
+        <ChangePageSection>
+          <ChangePageTitle>Want to know more... ?</ChangePageTitle>
+        </ChangePageSection>
+      </SpeakerSection>
+    </Page>
   </Layout>
 )
 
