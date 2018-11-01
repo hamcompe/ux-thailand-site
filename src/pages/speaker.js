@@ -3,6 +3,7 @@ import styled from 'react-emotion'
 import mq from '../../utils/media-query'
 
 import Layout from '../components/layout'
+import Foot from '../components/Foot'
 
 const Page = styled.div`
   background-image: linear-gradient(#000, var(--color_blur_dark));
@@ -130,6 +131,8 @@ const NameText = styled.div`
   font-style: italic;
   color: var(--color_blur_dark);
   position: absolute;
+  line-height: 1.1;
+  text-shadow: 0 4px 4px rgba(15, 29, 79, 0.25);
 `
 
 const NameTextLeft = styled(NameText)`
@@ -233,6 +236,7 @@ const Speaker = () => (
         </ChangePageSection>
       </SpeakerSection>
     </Page>
+    <Foot />
   </Layout>
 )
 
