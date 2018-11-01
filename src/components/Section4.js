@@ -86,19 +86,20 @@ function Section4({ id }) {
             <Title>“Empower locally, recognised globally.”</Title>
             <SubTitle>Our Vision</SubTitle>
             <Body>
-              UX Thailand begin as a series of monthly meet-ups, focused on empowering the local
-              community to do great design. When we looked to push this further. The UX Thailand
-              Conference was born.
+              UX Thailand begin as a series of monthly meet-ups, focused on
+              empowering the local community to do great design. When we looked
+              to push this further. The UX Thailand Conference was born.
             </Body>
             <Body>
-              A non-profit, meaning the organisers are all volunteers, we don’t get paid. The money
-              that is made is invested in further empowering the local community. We’ll use the
-              revenue to provide more regular events like our monthly meetup, training courses
-              throughout the year and hope to build relationships across APAC.
+              A non-profit, meaning the organisers are all volunteers, we don’t
+              get paid. The money that is made is invested in further empowering
+              the local community. We’ll use the revenue to provide more regular
+              events like our monthly meetup, training courses throughout the
+              year and hope to build relationships across APAC.
             </Body>
             <Body>
-              With all of this, we hope for Thailand to become a globally recognised leader in
-              design.
+              With all of this, we hope for Thailand to become a globally
+              recognised leader in design.
             </Body>
           </div>
         </Layout>

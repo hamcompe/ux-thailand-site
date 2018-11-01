@@ -43,35 +43,29 @@ const Layout = styled.div`
 `
 const ContentBox = styled.div``
 
-function Section7({id}) {
+function Section7({ id }) {
   return (
     <Section id={id}>
       <Wrapper>
         <Layout>
           <ContentBox>
-            <Label>
-              Day 1
-            </Label>
+            <Label>Day 1</Label>
             <Title>INSPIRE</Title>
-            <SubTitle>
-              International Conference
-            </SubTitle>
+            <SubTitle>International Conference</SubTitle>
             <Body>
-              A day of inspiring presentations from some of the industries leading minds. aiming to provoke thoughts and ideas for you to take back to your projects and organisations.
+              A day of inspiring presentations from some of the industries
+              leading minds. aiming to provoke thoughts and ideas for you to
+              take back to your projects and organisations.
             </Body>
           </ContentBox>
           <ContentBox>
-            <Label>
-              Day 2
-            </Label>
-            <Title>
-              HANDS-ON
-            </Title>
-            <SubTitle>
-              Workshop
-            </SubTitle>
+            <Label>Day 2</Label>
+            <Title>HANDS-ON</Title>
+            <SubTitle>Workshop</SubTitle>
             <Body>
-              A selection of practical, hands-on workshops for you to put theory into practice, learning new skillls and techniques to help you drive more customer value.
+              A selection of practical, hands-on workshops for you to put theory
+              into practice, learning new skillls and techniques to help you
+              drive more customer value.
             </Body>
           </ContentBox>
         </Layout>

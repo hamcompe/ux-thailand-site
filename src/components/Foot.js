@@ -44,7 +44,10 @@ class Foot extends React.Component {
       <FootWrapper>
         <LogoWrapper>
           <Link to="/">
-            <ImageLogo src={this.logoURLWithPrefix('logo_UXO-white.svg')} alt="" />
+            <ImageLogo
+              src={this.logoURLWithPrefix('logo_UXO-white.svg')}
+              alt=""
+            />
           </Link>
         </LogoWrapper>
         <PoweredBy>Serve and inspire by UX Thailand, 2018</PoweredBy>

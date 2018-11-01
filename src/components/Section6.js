@@ -50,7 +50,8 @@ function Section6({ id }) {
         <TextWrapper>
           <Title>Two days to inspire and upskill</Title>
           <Description>
-            The UX Thailand Conference 2019, held in Bangkok for an international audience
+            The UX Thailand Conference 2019, held in Bangkok for an
+            international audience
           </Description>
         </TextWrapper>
         <VerticalLine />

@@ -92,7 +92,7 @@ const CardSubtitle = styled.h3`
   word-wrap: break-word;
   text-align: left;
   blue {
-    color: var(--color_blue)
+    color: var(--color_blue);
   }
 `
 
@@ -146,16 +146,14 @@ const BuyTicket = styled.div`
   border-color: #c4c4c4;
 `
 
-function Price({id}) {
+function Price({ id }) {
   return (
     <Section id={id}>
       <Wrapper>
         <Title>
           Join us at <strong>The UX Thailand Conference</strong>
         </Title>
-        <Label>
-          Get 33% off. Early bird tickets ends 1st November 2018
-        </Label>
+        <Label>Get 33% off. Early bird tickets ends 1st November 2018</Label>
         <CardWrapper>
           <Card>
             <CardHead> Day 1 </CardHead>
@@ -163,7 +161,10 @@ function Price({id}) {
             <CardSubtitle> Conference only </CardSubtitle>
             <CardPriceWrapper>
               <CardPriceDiscount> 4,950 </CardPriceDiscount>
-              <CardPrice> 2,450 <small>THB</small> </CardPrice>
+              <CardPrice>
+                {' '}
+                2,450 <small>THB</small>{' '}
+              </CardPrice>
             </CardPriceWrapper>
             <BuyTicket>Buy Ticket</BuyTicket>
           </Card>
@@ -173,16 +174,25 @@ function Price({id}) {
             <CardSubtitle> Workshop Only (limited seat) </CardSubtitle>
             <CardPriceWrapper>
               <CardPriceDiscount> 11,950 </CardPriceDiscount>
-              <CardPrice> 8,950 <small>THB</small> </CardPrice>
+              <CardPrice>
+                {' '}
+                8,950 <small>THB</small>{' '}
+              </CardPrice>
             </CardPriceWrapper>
             <BuyTicket>Buy Ticket</BuyTicket>
           </Card>
           <Card>
             <CardTitle> FULL EXPERIENCE </CardTitle>
-            <CardSubtitle> Both Conference <blue>Day 1</blue> & Workshop <blue>Day 2</blue> </CardSubtitle>
+            <CardSubtitle>
+              {' '}
+              Both Conference <blue>Day 1</blue> & Workshop <blue>Day 2</blue>{' '}
+            </CardSubtitle>
             <CardPriceWrapper>
               <CardPriceDiscount> 14,950 </CardPriceDiscount>
-              <CardPrice> 9,950 <small>THB</small> </CardPrice>
+              <CardPrice>
+                {' '}
+                9,950 <small>THB</small>{' '}
+              </CardPrice>
             </CardPriceWrapper>
             <BuyTicket>Buy Ticket</BuyTicket>
           </Card>

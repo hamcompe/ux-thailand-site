@@ -27,7 +27,11 @@ const SpeakerImage = styled.img`
   height: 208px;
   margin-right: 40px;
   margin-left: 40px;
-  background-image: linear-gradient(to top right, var(--color_blue_light), var(--color_blue));
+  background-image: linear-gradient(
+    to top right,
+    var(--color_blue_light),
+    var(--color_blue)
+  );
   ${mq.s} {
     margin-left: 0px;
   }
@@ -72,7 +76,7 @@ const Detail = styled.p`
     text-decoration: underline;
     cursor: pointer;
     :hover {
-      color: var(--color_white)
+      color: var(--color_white);
     }
   }
 `
@@ -85,7 +89,9 @@ function SpeakerCard({ speaker }) {
       <SpeakerDetailWrapper>
         <Title>{speaker.title}</Title>
         <Name>{speaker.name}</Name>
-        <Detail>{speaker.detail} <know>Get to know more</know></Detail>
+        <Detail>
+          {speaker.detail} <know>Get to know more</know>
+        </Detail>
       </SpeakerDetailWrapper>
     </SpeakerContentBox>
   )

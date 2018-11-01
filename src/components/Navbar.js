@@ -20,8 +20,9 @@ const Nav = styled.nav`
   a {
     color: var(--color_almost_white);
   }
-  ${props => props.white
-    && `
+  ${props =>
+    props.white &&
+    `
     background: rgba(255,255,255,0.95);
     color: var(--color_black);
     a {
@@ -74,8 +75,9 @@ const MenuList = styled.ul`
 
   transition: all 0.3s ease;
   opacity: 1;
-  ${props => !props.show
-    && `
+  ${props =>
+    !props.show &&
+    `
     opacity: 0;
     visibility: hidden;
   `};
