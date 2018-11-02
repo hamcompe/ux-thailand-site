@@ -25,6 +25,10 @@ const SpeakerSection = styled.section`
 const Image = styled.img`
   width: 610px;
   height: 610px;
+  ${mq.s}{
+    width: 280px;
+    height: 280px;
+  }
 `
 
 const SpeakerWrapper = styled.div`
@@ -45,6 +49,9 @@ const FirstNameTitle = styled.h1`
   font-style: italic;
   line-height: 1.1;
   color: var(--color_blue);
+  ${mq.s}{
+    font-size: 40px;
+  }
 `
 const LastNameTitle = styled(FirstNameTitle)`
   padding-left: 40px;
